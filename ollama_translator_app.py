@@ -22,18 +22,18 @@ ctk.set_default_color_theme("green")
 # 게임별 프롬프트
 # ============================================================
 GAME_PROMPTS = {
-    "Crusader Kings 3": """You are translating text from the medieval grand strategy game 'Crusader Kings 3'.
-Use a majestic, epic tone appropriate for medieval nobility and court intrigue.""",
-    "Hearts of Iron 4": """You are translating text from the WWII grand strategy game 'Hearts of Iron 4'.
-Use a concise, military report style with professional terminology.""",
+    # "Crusader Kings 3": """You are translating text from the medieval grand strategy game 'Crusader Kings 3'.
+    # Use a majestic, epic tone appropriate for medieval nobility and court intrigue.""",
+    # "Hearts of Iron 4": """You are translating text from the WWII grand strategy game 'Hearts of Iron 4'.
+    # Use a concise, military report style with professional terminology.""",
     "Stellaris": """You are translating text from the sci-fi grand strategy game 'Stellaris'.
 Use futuristic, scientific terminology and a tone suitable for space exploration and diplomacy.""",
-    "Europa Universalis IV": """You are translating text from the historical grand strategy game 'Europa Universalis IV' (1444-1821 period).
-Use formal diplomatic language appropriate for the Early Modern period.""",
-    "Victoria 3": """You are translating text from the industrial era grand strategy game 'Victoria 3' (19th century).
-Use terminology appropriate for the Industrial Revolution era, including political movements, economic systems, and social reforms.""",
-    "Imperator: Rome": """You are translating text from the ancient grand strategy game 'Imperator: Rome'.
-Use classical, dignified language appropriate for the Roman Republic period."""
+    # "Europa Universalis IV": """You are translating text from the historical grand strategy game 'Europa Universalis IV' (1444-1821 period).
+    # Use formal diplomatic language appropriate for the Early Modern period.""",
+    # "Victoria 3": """You are translating text from the industrial era grand strategy game 'Victoria 3' (19th century).
+    # Use terminology appropriate for the Industrial Revolution era, including political movements, economic systems, and social reforms.""",
+    # "Imperator: Rome": """You are translating text from the ancient grand strategy game 'Imperator: Rome'.
+    # Use classical, dignified language appropriate for the Roman Republic period."""
 }
 
 def get_enhanced_prompt(game_name, base_prompt):
