@@ -113,12 +113,7 @@ def tokenize_tgt(val, src_prefix="l_korean"):
 def parse_yml(val):
     data = {}
     for line in val.split("\n"):
-        line = line.strip()
-        if ":" in line:
-            parts = line.split(":", 1)
-            key = parts[0].strip().lower()
-            raw = parts[1].strip()
-            if raw.startswith('"') and raw.endswith('"'):
-                raw = raw[1:-1]
-            data[key] = raw
+        m = re.match(r'^\s*([\w.]+):\d*\s*"(.+)"', line)
+        if m:
+            data[m.group(1).lower()] = m.group(2)
     return data
